@@ -14,5 +14,7 @@ int main()
     carrots = carrots + 2;
     cout << "Now you have " << carrots << " carrots." << endl;
 
+    cin.get();
+    cin.get();
     return 0;
 }
