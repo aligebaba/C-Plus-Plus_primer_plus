@@ -10,7 +10,7 @@ int main()
     char dessert[Arsize];
 
     cout << "Enter your name: \n";
-    cin.get(name, Arsize).get();
+    cin.get(name, Arsize).get();    // 可以读取一行，直到遇到换行符，并且最终保留换行符。
     cout << "Enter your favorite dessert: \n";
     cin.get(dessert, Arsize).get();
     cout << "I have some delicious " << dessert;

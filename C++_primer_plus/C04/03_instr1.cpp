@@ -10,7 +10,7 @@ int main()
     char dessert[Arsize];
 
     cout << "Enter your name: \n";
-    cin >> name;
+    cin >> name;    // 只能读取一个单词
     cout << "Enter your favorite dessert: \n";
     cin >> dessert;
     cout << "I have some delicious " << dessert;
