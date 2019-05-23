@@ -9,7 +9,7 @@ int main()
     short stacks[3] = {3, 2, 1};
 
     // 以下是两种获得数组首地址的方法。
-    double *pw = wages;
+    double *pw = wages;     // wages表示该数组第一个元素的地址，等同于&wages[0]。
     short *ps = &stacks[0];
 
     cout << "pw = " << pw << ", *pw = " << *pw << endl;
