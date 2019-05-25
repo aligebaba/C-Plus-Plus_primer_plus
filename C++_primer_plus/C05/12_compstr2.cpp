@@ -1,4 +1,4 @@
-// compstr1.cpp -- comparing strings using arrays
+// compstr2.cpp -- comparing strings using arrays
 
 #include <iostream>
 #include <string>
