@@ -1,7 +1,7 @@
 // outfile.cpp -- writing to a file
 
 #include <iostream>
-#include <fstream>
+#include <fstream>      // 用于文件I/O
 
 int main()
 {
@@ -12,8 +12,8 @@ int main()
     double a_price;
     double d_price;
 
-    ofstream outFile;
-    outFile.open("carinfo.txt");
+    ofstream outFile;               // 创建ofstream对象
+    outFile.open("carinfo.txt");    // 与文件carinfo.txt关联，程序运行后创建该文件。
 
     cout << "Enter the make and model of automobile: ";
     cin.getline(automobile, 50);
@@ -38,4 +38,9 @@ int main()
     outFile << "Year: " << year << endl;
     outFile << "Was asking $" << a_price << endl;
     outFile << "Now asking $" << d_price << endl;
+
+    outFile.close();    // 关闭文件carinfo.txt
+    cin.get();
+    cin.get();
+    return 0;
 }
