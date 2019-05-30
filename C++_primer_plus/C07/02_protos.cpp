@@ -14,7 +14,7 @@ int main()
     double volume = cube(side);
     cout << "A " << side << "-foot cube has a volume of ";
     cout << volume << " cubic feet.\n";
-    cheers(cube(2));
+    cheers(cube(2));    // 编译器自动将cube()的参数2转换成2.0；自动将cheers()的参数8.0转换成8.
 
     cin.get();
     cin.get();
