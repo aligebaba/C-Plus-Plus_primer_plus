@@ -15,10 +15,10 @@ int main()
     cout << "Total cookies eaten: " << sum << endl;
 
     sum = sum_arr(cookies, 3);
-    cout << "First three eaters ate " << sum << "cookies.\n";
+    cout << "First three eaters ate " << sum << " cookies.\n";
 
     sum = sum_arr(cookies + 4, 4);
-    cout << "Last four eaters ate " << sum << "cookies.\n";
+    cout << "Last four eaters ate " << sum << " cookies.\n";
 
     cin.get();
     return 0;
