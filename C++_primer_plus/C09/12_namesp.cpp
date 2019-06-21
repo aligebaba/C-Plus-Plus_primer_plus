@@ -38,7 +38,7 @@ namespace debts
     double sumDebts(const Debt ar[], int n)
     {
         double total = 0;
-        for (int i = 0;i<n; i++)
+        for (int i = 0; i<n; i++)
             total += ar[i].amount;
         return total;
     }
