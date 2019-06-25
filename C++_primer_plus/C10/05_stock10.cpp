@@ -1,12 +1,23 @@
-// stock00.cpp -- implementing the Stock class
-// version 00
+// stock10.cpp -- implementing the Stock class
+// version 10
 
 #include <iostream>
-#include "01_stock00.h"
+#include "04_stock10.h"
 
-void Stock::acquire(const std::string &co, long n, double pr)
+Stock::Stock()
 {
+    std::cout << "Default constructoe called\n";
+    company = "no name";
+    shares = 0;
+    share_val = 0.0;
+    total_val = 0.0;
+}
+
+Stock::Stock(const std::string &co, long n, double pr)
+{
+    std::cout << "Constructor using " << co << " called\n";
     company = co;
+
     if (n < 0)
     {
         std::cout << "Number of shares can't be negative; "
@@ -17,6 +28,11 @@ void Stock::acquire(const std::string &co, long n, double pr)
         shares = n;
     share_val = pr;
     set_tot();
+}
+
+Stock::~Stock()
+{
+    std::cout << "Bye, " << company << "!\n";
 }
 
 void Stock::buy(long num, double price)
