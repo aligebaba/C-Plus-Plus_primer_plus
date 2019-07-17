@@ -1,4 +1,4 @@
-# C-_primer_plus
+# C-Plus-Plus_primer_plus
 《C++_primer_plus》（第六版）中文版 课程代码及课后习题
 
 * 每一章的示例代码单独建立文件夹，以CXX命名（XX表示章节编号，如：01、02……等等）。
